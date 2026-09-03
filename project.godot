@@ -31,6 +31,7 @@ window/stretch/aspect="expand"
 [gui]
 
 theme/custom="res://assets/default_theme.tres"
+theme/custom_font="res://assets/fonts/NotoSansTC-Variable.ttf"
 
 [input]
 
