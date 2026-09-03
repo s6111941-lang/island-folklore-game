@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cua1h5ootf6pu"]
 
 [ext_resource type="Script" uid="uid://cdnq6yk61073l" path="res://scripts/collection_screen.gd" id="1_ui"]
+[ext_resource type="Theme" path="res://assets/default_theme.tres" id="2_theme"]
 
 [node name="CollectionScreen" type="Control" unique_id=1516777580]
 layout_mode = 3
@@ -13,4 +14,5 @@ offset_right = 0.0
 offset_bottom = 0.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_theme")
 script = ExtResource("1_ui")
