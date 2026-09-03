@@ -31,13 +31,13 @@ jobs:
           unzip -q Godot_v4.7.2-stable_linux.x86_64.zip
           mkdir -p "$HOME/.local/share/godot/export_templates/4.7.2.stable"
           unzip -q Godot_v4.7.2-stable_export_templates.tpz
-          WEB_TEMPLATE="$(find templates -maxdepth 1 -type f -name 'web_release*.zip' | head -n 1)"
+          WEB_TEMPLATE="$(find templates -maxdepth 1 -type f -name 'web_nothreads_release*.zip' | head -n 1)"
           test -n "$WEB_TEMPLATE"
           cp templates/* "$HOME/.local/share/godot/export_templates/4.7.2.stable/"
-          cp "$WEB_TEMPLATE" "$HOME/.local/share/godot/export_templates/4.7.2.stable/web_release.zip"
-          WEB_DEBUG_TEMPLATE="$(find templates -maxdepth 1 -type f -name 'web_debug*.zip' | head -n 1)"
+          cp "$WEB_TEMPLATE" "$HOME/.local/share/godot/export_templates/4.7.2.stable/web_nothreads_release.zip"
+          WEB_DEBUG_TEMPLATE="$(find templates -maxdepth 1 -type f -name 'web_nothreads_debug*.zip' | head -n 1)"
           if [ -n "$WEB_DEBUG_TEMPLATE" ]; then
-            cp "$WEB_DEBUG_TEMPLATE" "$HOME/.local/share/godot/export_templates/4.7.2.stable/web_debug.zip"
+            cp "$WEB_DEBUG_TEMPLATE" "$HOME/.local/share/godot/export_templates/4.7.2.stable/web_nothreads_debug.zip"
           fi
           chmod +x Godot_v4.7.2-stable_linux.x86_64
 
